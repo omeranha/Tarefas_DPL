@@ -23,6 +23,7 @@ namespace projetoDAPL
 			}
 			horastotais.Text += total;
 			double conta = (41 - total) * -1;
+			double horasMes = total * 4;
 			double salariomes = (conta * 4) * 8;
 			double salarioTotal = 1412;
 			semanais.Text += conta;
