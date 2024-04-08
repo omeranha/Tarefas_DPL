@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace projetoDAPL {
@@ -19,8 +11,9 @@ namespace projetoDAPL {
 			string nomefunc = nome.Text;
 			string emailfunc = email.Text;
 			string senhafunc = senha.Text;
-			if (string.IsNullOrEmpty(nomefunc) && string.IsNullOrEmpty(emailfunc) && string.IsNullOrEmpty(senhafunc)) {
+			if (string.IsNullOrWhiteSpace(nomefunc) || string.IsNullOrWhiteSpace(emailfunc) || string.IsNullOrWhiteSpace(senhafunc)) {
 				MessageBox.Show("A caixa de nome, email ou senha está vazia");
+				return;
 			}
 			funcionario = new Funcionario(nomefunc, emailfunc, senhafunc);
 			this.Hide();
