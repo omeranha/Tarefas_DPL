@@ -34,7 +34,7 @@ namespace projetoDAPL
 			if (horasExtras > 0) {
 				horas.Text += "extras: " + horasExtras;
 			} else{
-				horas.Text += "faltantes: " + horasFaltantes;
+				horas.Text += "faltantes: " + (horasFaltantes * 4);
 			}
 			salario.Text += "R$" + (salarioSemanal * 4).ToString("F2");
 		}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace projetoDAPL
 {
@@ -27,8 +28,8 @@ namespace projetoDAPL
 		}
 
 		private void enviardia_Click(object sender, EventArgs e) {
-			DateTime horarioEntrada = DateTime.Parse(entrada.Text);
-			DateTime horarioSaida = DateTime.Parse(saida.Text);
+			DateTime horarioEntrada = DateTime.ParseExact(entrada.Text, "H:mm", CultureInfo.InvariantCulture);
+			DateTime horarioSaida = DateTime.ParseExact(saida.Text, "H:mm", CultureInfo.InvariantCulture);
 			Dia dia = dias.ElementAt(index);
 			dia.setHorarios(horarioEntrada, horarioSaida, horarioSaida.Subtract(horarioEntrada).Hours);
 			if (index == dias.Count - 1) {

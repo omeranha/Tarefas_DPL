@@ -43,13 +43,13 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Amiri", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.label1.Location = new System.Drawing.Point(275, 9);
+			this.label1.Location = new System.Drawing.Point(262, 12);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(185, 37);
+			this.label1.Size = new System.Drawing.Size(219, 100);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Bem vindo, ";
+			this.label1.Text = "Bem vindo,";
 			// 
 			// exit
 			// 
@@ -64,50 +64,49 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(172, 111);
+			this.label3.Font = new System.Drawing.Font("Amiri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(232, 187);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(167, 24);
+			this.label3.Size = new System.Drawing.Size(145, 45);
 			this.label3.TabIndex = 4;
-			this.label3.Text = "Horário de entrada";
+			this.label3.Text = "Horário de Entrada";
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(393, 111);
+			this.label4.Font = new System.Drawing.Font("Amiri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(444, 187);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(148, 24);
+			this.label4.Size = new System.Drawing.Size(129, 45);
 			this.label4.TabIndex = 5;
-			this.label4.Text = "Horário de saída";
+			this.label4.Text = "Horário de Saída";
 			// 
 			// label5
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(306, 214);
+			this.label5.Font = new System.Drawing.Font("Amiri", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(355, 366);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(104, 32);
+			this.label5.Size = new System.Drawing.Size(153, 45);
 			this.label5.TabIndex = 6;
-			this.label5.Text = "Exemplo de uso\r\n7:52";
+			this.label5.Text = "Exemplo de uso: 7:52";
 			// 
 			// entrada
 			// 
-			this.entrada.Location = new System.Drawing.Point(230, 138);
+			this.entrada.Location = new System.Drawing.Point(251, 224);
 			this.entrada.Name = "entrada";
 			this.entrada.Size = new System.Drawing.Size(100, 20);
 			this.entrada.TabIndex = 7;
 			// 
 			// saida
 			// 
-			this.saida.Location = new System.Drawing.Point(418, 138);
+			this.saida.Location = new System.Drawing.Point(452, 224);
 			this.saida.Name = "saida";
 			this.saida.Size = new System.Drawing.Size(100, 20);
 			this.saida.TabIndex = 8;
 			// 
 			// enviardia
 			// 
-			this.enviardia.Location = new System.Drawing.Point(321, 164);
+			this.enviardia.Location = new System.Drawing.Point(377, 291);
 			this.enviardia.Name = "enviardia";
 			this.enviardia.Size = new System.Drawing.Size(89, 36);
 			this.enviardia.TabIndex = 9;
@@ -118,28 +117,29 @@
 			// diasemana
 			// 
 			this.diasemana.AutoSize = true;
-			this.diasemana.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.diasemana.Location = new System.Drawing.Point(305, 87);
+			this.diasemana.Font = new System.Drawing.Font("Amiri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.diasemana.Location = new System.Drawing.Point(349, 135);
 			this.diasemana.Name = "diasemana";
-			this.diasemana.Size = new System.Drawing.Size(125, 24);
+			this.diasemana.Size = new System.Drawing.Size(133, 52);
 			this.diasemana.TabIndex = 10;
 			this.diasemana.Text = "segunda-feira";
 			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(229, 46);
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Font = new System.Drawing.Font("Amiri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(250, 82);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(312, 24);
+			this.label2.Size = new System.Drawing.Size(361, 53);
 			this.label2.TabIndex = 11;
-			this.label2.Text = "Insira os horários de entrada e saída";
+			this.label2.Text = "Insira seus horários de entrada e saída:";
 			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.BackColor = System.Drawing.Color.CadetBlue;
+			this.ClientSize = new System.Drawing.Size(800, 420);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.diasemana);
 			this.Controls.Add(this.enviardia);
@@ -151,6 +151,7 @@
 			this.Controls.Add(this.exit);
 			this.Controls.Add(this.label1);
 			this.Name = "Form2";
+			this.Text = "Página de entrada";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
