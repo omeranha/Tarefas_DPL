@@ -21,21 +21,25 @@ namespace projetoDAPL
 		private void confirmar_Click(object sender, EventArgs e)
 		{
 			string nomefunc = nome.Text;
-			string[] lines = File.ReadAllLines("funcionario.txt");
+			alterarSenha(nomefunc);
+			this.Close();
+			new Form1().Show();
+		}
+
+		private void alterarSenha(string nome) {
+			string[] lines = File.ReadAllLines("funcionarios.txt");
 			for (int i = 0; i < lines.Length; i++) {
-				var line = lines[i];
-				if (line.StartsWith("Nome: " + nomefunc)) {
-					string[] parts = line.Split(new string[] { "Senha: " }, StringSplitOptions.None);
-					if (parts.Length > 1) {
-						parts[1] = novasenha.Text.GetHashCode().ToString();
-						lines[i] = string.Join("Senha: ", parts);
+				var linha = lines[i];
+				if (linha.StartsWith("Nome: " + nome)) {
+					string[] senha = linha.Split(new string[] { "Senha: " }, StringSplitOptions.None);
+					if (senha.Length > 1) {
+						senha[1] = novasenha.Text.GetHashCode().ToString();
+						lines[i] = string.Join("Senha: ", senha);
 					}
 				}
 			}
+			File.WriteAllLines("funcionarios.txt", lines);
 			MessageBox.Show("Senha alterada com sucesso.");
-			File.WriteAllLines("funcionario.txt", lines);
-			this.Close();
-			new Form1().Show();
 		}
 	}
 }

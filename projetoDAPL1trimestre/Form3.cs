@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace projetoDAPL
-{
-	public partial class Form3 : Form
-	{
-		private const double minimoHoras = 41;
-		private const double porHora = 1412 / (minimoHoras * 4); // 8.63
-
+namespace projetoDAPL {
+	public partial class Form3 : Form {
 		public Form3() {
 			InitializeComponent();
 			Funcionario funcionario = Application.OpenForms.OfType<Form1>().Single().GetFuncionario();
@@ -21,6 +16,8 @@ namespace projetoDAPL
 			}
 			horastotais.Text += horasSemanais * 4;
 
+			const double minimoHoras = 41;
+			const double porHora = 1412 / (minimoHoras * 4); // 8.63
 			double horasExtras = horasSemanais - minimoHoras;
 			double horasFaltantes = 0;
 			if (horasExtras < 0) {
@@ -33,8 +30,10 @@ namespace projetoDAPL
 			semanal.Text += salarioSemanal.ToString("F2");
 			if (horasExtras > 0) {
 				horas.Text += "extras: " + horasExtras;
-			} else{
+			} else if (horasExtras < 0) {
 				horas.Text += "faltantes: " + (horasFaltantes * 4);
+			} else {
+				horas.Hide();
 			}
 			salario.Text += "R$" + (salarioSemanal * 4).ToString("F2");
 		}

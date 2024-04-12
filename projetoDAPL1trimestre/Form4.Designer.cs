@@ -38,11 +38,11 @@
 			// 
 			// nome
 			// 
-			this.nome.Font = new System.Drawing.Font("Amiri", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.nome.Location = new System.Drawing.Point(190, 99);
+			this.nome.Font = new System.Drawing.Font("Amiri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.nome.Location = new System.Drawing.Point(190, 96);
 			this.nome.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
 			this.nome.Name = "nome";
-			this.nome.Size = new System.Drawing.Size(168, 30);
+			this.nome.Size = new System.Drawing.Size(168, 36);
 			this.nome.TabIndex = 0;
 			// 
 			// label1
@@ -57,8 +57,9 @@
 			// 
 			// label2
 			// 
+			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.Font = new System.Drawing.Font("Amiri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(114, 85);
+			this.label2.Location = new System.Drawing.Point(103, 92);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(81, 43);
 			this.label2.TabIndex = 3;
@@ -77,20 +78,20 @@
 			// 
 			// novasenha
 			// 
-			this.novasenha.Font = new System.Drawing.Font("Amiri", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.novasenha.Location = new System.Drawing.Point(190, 162);
+			this.novasenha.Font = new System.Drawing.Font("Amiri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.novasenha.Location = new System.Drawing.Point(190, 153);
 			this.novasenha.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
 			this.novasenha.Name = "novasenha";
-			this.novasenha.Size = new System.Drawing.Size(168, 30);
+			this.novasenha.Size = new System.Drawing.Size(168, 36);
 			this.novasenha.TabIndex = 6;
 			// 
 			// confirmar
 			// 
-			this.confirmar.Font = new System.Drawing.Font("David CLM", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-			this.confirmar.Location = new System.Drawing.Point(238, 203);
+			this.confirmar.Font = new System.Drawing.Font("David CLM", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+			this.confirmar.Location = new System.Drawing.Point(233, 203);
 			this.confirmar.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
 			this.confirmar.Name = "confirmar";
-			this.confirmar.Size = new System.Drawing.Size(70, 22);
+			this.confirmar.Size = new System.Drawing.Size(78, 28);
 			this.confirmar.TabIndex = 7;
 			this.confirmar.Text = "confirmar";
 			this.confirmar.UseVisualStyleBackColor = true;

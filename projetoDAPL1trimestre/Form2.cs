@@ -13,18 +13,13 @@ namespace projetoDAPL
 		public Form2() {
 			InitializeComponent();
 			var funcionario = Application.OpenForms.OfType<Form1>().FirstOrDefault()?.GetFuncionario();
-			label1.Text += funcionario?.getNome();
-			string[] nomes = { "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira" };
-			foreach (string nome in nomes) {
-				DateTime horarioEntrada = new DateTime();
-				DateTime horarioSaida = new DateTime();
-				dias.Add(new Dia(nome, horarioEntrada, horarioSaida, 0));
-			}
+			label1.Text += funcionario?.getNome() + "!";
+			configurarDias(dias);
 		}
 
 		private void exit_Click(object sender, EventArgs e) {
 			this.Close();
-			new Form1().Show();
+			Application.OpenForms.OfType<Form1>().FirstOrDefault()?.Show();
 		}
 
 		private void enviardia_Click(object sender, EventArgs e) {
@@ -42,6 +37,15 @@ namespace projetoDAPL
 
 		public List<Dia> GetDias() {
 			return dias;
+		}
+
+		private void configurarDias(List<Dia> dias) {
+			string[] nomes = { "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira" };
+			foreach (string nome in nomes) {
+				DateTime horarioEntrada = new DateTime();
+				DateTime horarioSaida = new DateTime();
+				dias.Add(new Dia(nome, horarioEntrada, horarioSaida, 0));
+			}
 		}
 	}
 }

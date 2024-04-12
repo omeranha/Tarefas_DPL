@@ -99,6 +99,7 @@
 			this.senha.Name = "senha";
 			this.senha.Size = new System.Drawing.Size(165, 21);
 			this.senha.TabIndex = 6;
+			this.senha.UseSystemPasswordChar = true;
 			// 
 			// loginbutton
 			// 

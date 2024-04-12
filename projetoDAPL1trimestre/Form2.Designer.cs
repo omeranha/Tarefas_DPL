@@ -47,9 +47,9 @@
 			this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
 			this.label1.Location = new System.Drawing.Point(262, 12);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(219, 100);
+			this.label1.Size = new System.Drawing.Size(230, 100);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Bem vindo,";
+			this.label1.Text = "Bem vindo, ";
 			// 
 			// exit
 			// 
